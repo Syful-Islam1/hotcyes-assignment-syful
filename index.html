@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <!-- google manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'hoc-primary': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <h2 class="text-black text-3xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</h2>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                    <ul class="menu text-base font-normal menu-horizontal gap-10">
+                        <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-5">
+                    <img src="Images/Frame.png" alt="">
+                    <a class="btn text-white text-base font-normal bg-hoc-primary ">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Carousel section -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute h-[30%] w-[50%] bg-black right-10 bottom-10 rounded-2xl">
+                    <h3 class="font-extrabold text-white text-2xl py-6 px-6">Meet all the heroes from the field</h3>
+                    <p class="font-medium text-white text-base py-6 px-6">Cincinnati hasn’t always been a hockey town,
+                        but it certainly wasn’t for lack of trying</p>
+                </div>
+                <div class="absolute gap-4 transform -translate-y-1/2 left-8 right-8 bottom-5">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="my-40">
+            <!-- Professional Hockeys Club -->
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-black mb-6">Professional Hockeys Club</h1>
+                <p class="w-[40%] mx-auto opacity-70 text-lg">The sound of the puck hitting the post. These sounds
+                    represent my life. For 9 out of 12 months in a year my whole life is on hold for hockey season.</p>
+            </div>
+            <div class="container mx-auto mt-10 lg:px-24 px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="relative items-center justify-center flex-col">
+                        <svg width="120" height="120" viewBox="0 0 120 120" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                                fill="#E7E7E8" />
+                            <path
+                                d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                                fill="#FF4240" />
+                        </svg>
+                        <div class="">
+                            <h2>87%</h2>
+                        </div>
+                        <h3>Prayer Facility</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Program Section -->
+        <section class="md:container md:mx-auto">
+            <div class="text-center">
+                <h1 class="text-4xl">Program Sections</h1>
+                <p class="text-base">Each of the eight Minnesota High School Boys' Hockey Sections (A and AA) conducts
+                    tryouts in their Section. Players selected to tryout are</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- First Card -->
+                <div class="card bg-base-100 image-full shadow-xl">
+                    <figure><img src="./Images/2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl font-semibold">Junior Program</h2>
+                        <p>Follow the MN Hockey Hub for complete Star Tribune coverage of boys' high school</p>
+                        <div class="card-actions ">
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Card -->
+                <div class="card bg-base-100 image-full shadow-xl">
+                    <figure><img src="./Images/3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl font-semibold">Junior Program</h2>
+                        <p>Follow the MN Hockey Hub for complete Star Tribune coverage of boys' high school</p>
+                        <div class="card-actions ">
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- clients question -->
+        <section class="mx:auto">
+            <!-- Heading -->
+            <div class="text-center">
+                <h1 class="text-4xl">Clients Question</h1>
+                <p class="text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+            <!-- Accordion -->
+            <div class="">
+                <div>
+                    <img src="Images/11.png" alt="">
+                </div>
+                <div class="collapse collapse-plus bg-base-200 flex-col">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">
+                        Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">
+                        Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">
+                        Click to open this one and close others
+                    </div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
